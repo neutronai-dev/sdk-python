@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neutron-ai-sdk"
+version = "0.3.0"
+description = "Python SDK and CLI helpers for Neutron AI memory and MCP operations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Neutron AI" }]
+keywords = ["neutron-ai", "memory", "mcp", "agents", "cloudflare"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Typing :: Typed"
+]
+
+[project.urls]
+Homepage = "https://neutronai.dev"
+Documentation = "https://neutronai.dev"
+Repository = "https://github.com/neutronai-dev/sdk-python"
+Issues = "https://github.com/neutronai-dev/sdk-python/issues"
+
+[project.scripts]
+neutron-ai = "neutron_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+neutron_ai = ["py.typed"]
