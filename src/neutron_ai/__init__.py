@@ -10,4 +10,4 @@ __all__ = [
     "neutron_mcp_tools",
 ]
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
