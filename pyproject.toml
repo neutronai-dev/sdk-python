@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "neutron-ai-sdk"
-version = "0.3.2"
+version = "0.3.3"
 description = "Python SDK and CLI helpers for Neutron AI memory and MCP operations."
 readme = "README.md"
 requires-python = ">=3.10"
